@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FUN with Phonics </title>
+	<link rel="icon" href="icon.jpg" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color:#063df7;">
+	<div class="topnav">
+		<div class="pill-nav">
+			<a style=float:right class="active">
+				<span style="font-size:30px;cursor:pointer;" class="active" onclick="openNav()">&#9776; Contact</span>
+				<script>
+					function openNav() {
+					  document.getElementById("myNav").style.display = "block";
+					}
+					function closeNav() {
+  					document.getElementById("myNav").style.display = "none";
+					}
+				</script>
+			</a>
+			<a style="float:right" target="_blank" href="location.html">Locate Us</a>
+			<a style=float:right target="_blank" href="gallery.html">Gallery</a>
+			<a style=float:right target="_blank" href="activities.html">Activities</a>
+			<a style=float:right href="#team">Team</a>  
+			<a style=float:right target="_blank" href="programs.html">Programs</a>
+			<a style=float:right target="_blank" href="about.html">About</a>		
+			<a style=float:right href="#home">Home</a>
+		</div> 
+	</div>
+
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div class="overlay-content">
+  	  
+  	</div>
+	</div>
+	<br><br><br>
+	<a name="home">
+		<div>
+  		<img class="mySlides" src="cover2.jpg" style="width:100%">
+  		<img class="mySlides" src="cover3.jpg" style="width:100%">
+			<img class="mySlides" src="cover4.jpg" style="width:100%">
+			<img class="mySlides" src="cover5.jpg" style="width:100%">
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+  			var i;
+  			var x = document.getElementsByClassName("mySlides");
+  			for (i = 0; i < x.length; i++) {
+  			  x[i].style.display = "none";  
+  			}
+  			myIndex++;
+  			if (myIndex > x.length) {myIndex = 1}    
+ 				x[myIndex-1].style.display = "block";  
+ 				setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+	</a>
+		    
+	<div>
+		<div style="display: inline-block; padding-left:120px;">
+			<p class="dashed" id= "rcorners3" align="left">About</p>
+		</div>
+		<div style="float:center; padding-right:120px;">
+			<p class="dashed" id= "rcorners3" align="left">Program</p>
+		</div>
+		<div style="float:center; padding-left:120px;">
+			<p class="dashed" id= "rcorners3" align="left">Activities</p>
+		</div>
+		<div style="float:center; padding-right:120px;">
+			<p class="dashed" id= "rcorners3" align="left">Locate Us</p>
+		</div>
+	</div>
+
+  <br><br>    
+  <!-- Team -->
+  <a name="team">
+	 	<div class="row" style= "width:100%; display:block; margin-left:auto; margin-right:auto";>
+		  <div class="column">
+		    <div class="card">
+		      <img src="team1.jpg" alt="Tanuja" style="width:100%;">
+		      <div class="container">
+		        <h2>Tanuja Reddy</h2>
+		        <p class="title">CEO & Founder</p>
+		        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+		        <p>example@example.com</p>
+		        <p><button class="button">Contact</button></p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="card">
+		      <img src="team2.jpg" alt="latha" style="width:100%">
+		      <div class="container">
+		        <h2>Latha Patil</h2>
+		        <p class="title">Art Director</p>
+		        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+		        <p>example@example.com</p>
+		        <p><button class="button">Contact</button></p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</a>
+  	  
+  <marquee direction="right"; behavior="scroll"; scrollamount=7;><tt>This is basic example of marquee</tt></marquee>
+  
+  <div class="footer">
+		<br><br><br>
+  	<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-snapchat-ghost"></a>
+		<a href="#" class="fa fa-skype"></a>
+	</div>
+	
+</body>
+</html>
